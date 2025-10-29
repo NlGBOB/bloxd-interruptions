@@ -177,7 +177,7 @@ If your goal is to find an element or test a condition, it is much better to use
 
 | Method | "Interrupts" (Empty List) | "Interrupts" (List of size `n`) | Notes / Pros |
 | :--- | :--- | :--- | :--- |
-| **`list.find((item, index, arr) => { ... })`** | 1 | `1 + k` (where `k` is the index of the first match) | **Pro:** A way to find the **first element** that satisfies a condition. EDIT: actually a better way is `(if element in list) {list.findIndex...}`. I can't come up with a scenario where you might want to use `find`.
+| **`list.find((item, index, arr) => { ... })`** | 1 | `1 + k` (where `k` is the index of the first match) | **Pro:** A way to find the **first element** that satisfies a condition. EDIT: actually a better way is `(if element in list) {list.findIndex...}`. I can't come up with a scenario when you might want to use `find`.
 | **`list.findIndex((item, index, arr) => { ... })`** | 1 | `1 + k` (where `k` is the index of the first match) | **Pro:** The most efficient way to find the **index of the first element** that satisfies a condition. |
 | **`list.some((item, index, arr) => { ... })`** | 1 | `1 + k` (where `k` is the index of the first `true` result) | **Pro:** The most efficient way to check if **at least one** element in an array meets a condition. |
 | **`list.every((item, index, arr) => { ... })`** | 1 | `1 + k` (where `k` is the index of the first `false` result) | **Pro:** The most efficient way to check if **all elements** in an array meet a condition. |
